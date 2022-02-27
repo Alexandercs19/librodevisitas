@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro De Visitas</title> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <header>  <h1>
+            Libro de Visitas
+        </h1> 
+        </header>
+    </div>
+   <div>
+    <form name="Formulario" netlify>
+        <h2> Datos Personales:</h2>
+       <p><label>Nombres: <input name="name" required autofocus tabindex="1" minlength="1" maxlength="max" </label></p>
+       <p><label>Apellidos: <input name="lastname" required autofocus tabindex="1" maxlength="max"</label></p>
+       <p><label>E-mail: <input name="email" type="email" id="email" </label></p>
+       <h2>Indique un Pseudonimo y una contraseña</h2>
+       <P><label>Pseudonimo: <input name="Pseudonimo" size="4" maxlength="16"<label><p>
+       <p><label>Ingrese una Contraseña: <input type="password" name="password" size="10" maxlength="12"</label></p>
+       <h2>Otros datos:</h2>
+       <div>
+       <p><label>Fecha de Nacimiento: <input type="date" name="Fecha" size="20"</label></p></div>
+       <div>
+       <p><label>Pais De Nacimiento: </label><select name="Pais_Nacimiento" >
+           <option value="Seleccionar">-Seleccione su pais-</option>
+           <option value="Republica Dominicana"> Republica Dominicana</option>
+           <option value="Puerto Rico"> Puerto Rico</option>
+           <option value="Venezuela"> Venezuela</option>
+           <option value="Bolivia"> Bolivia</option>
+           <option value="Colombia"> Colombia</option>
+           <option value="Rusia"> Rusia</option>
+           <option value="Ucrania"> Ucrania</option>
+           <option value="China"> China</option>
+           <option value="India"> India</option>
+           <option value="Japon"> Japon</option>
+           <option value="Taiwan"> Taiwan</option>
+           <option value="Canada"> Canada</option>
+           <option value="Estados Unidos"> Estados Unidos</option>
+           <option value="Mexico"> Mexico</option>
+           <option value="Costa Rica"> Costa Rica</option>
+           <option value="Chile"> Chile</option>
+       </select></p> </div>
+       <P><label>Edad: <input name="Edad" type="number" min="1" max="90" size="2"</label></P>
+       <p><label>Sexo:</label></p>
+       <p><input name="Sexo" type="radio"> Masculino</p>
+       <p><input name="Sexo" type="radio"> Femenino</p>
+       <p><input name="Sexo" type="radio"> No Especificar</p>
+       <p><label>¿Donde Vives?:</label></p>
+       <input type="radio" name="Lugar" value="Santo Domingo" > Santo Domingo<br>
+       <input type="radio" name="Lugar" value="Santiago"> Santiago<br>
+       <input type="radio" name="Lugar" value="La Romana" > La Romana<br>
+       <input type="radio" name="Lugar" value="La vega" > La Vega<br>
+       <input type="radio" name="Lugar" value="San Cristobal" > San Cristobal<br>
+       <input type="radio" name="Lugar" value="Otros"> Otros: <input type="text" name="otros" size="12" maxlength="12">
+       <br>
+       <P><label>Aficiones:</label></P>
+       <input type="checkbox">Musica
+       <input type="checkbox">Deportes
+       <input type="checkbox">Pintura<br>
+       <input type="checkbox">Lectura
+       <input type="checkbox">Salir<br>
+       <input type="checkbox"> Otros: <input type="text">
+       <br>
+       <p><input type="submit" value="Enviar">
+        <input type="reset" value="Borrar" ><p>
+    </form> 
+   </div>
+</body>
+</html>
